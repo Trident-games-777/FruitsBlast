@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".fruit.FruitBlast">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineBottom">
+
+        <ImageView
+            android:id="@+id/iv0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/iv1"
+            app:layout_constraintEnd_toStartOf="@+id/iv1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv1"
+            app:srcCompat="@drawable/banana"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/iv2"
+            app:layout_constraintEnd_toStartOf="@+id/iv2"
+            app:layout_constraintStart_toEndOf="@+id/iv0"
+            app:layout_constraintTop_toTopOf="@+id/iv2"
+            app:srcCompat="@drawable/bell"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintEnd_toStartOf="@+id/iv3"
+            app:layout_constraintStart_toEndOf="@+id/iv1"
+            app:layout_constraintTop_toTopOf="@+id/iv3"
+            app:srcCompat="@drawable/cherry"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/iv4"
+            app:layout_constraintEnd_toStartOf="@+id/iv4"
+            app:layout_constraintStart_toEndOf="@+id/iv2"
+            app:layout_constraintTop_toTopOf="@+id/iv4"
+            app:srcCompat="@drawable/pineapple"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plum"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/ivGuess0"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/ivGuess1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSequence0"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/pineapple" />
+
+    <ImageView
+        android:id="@+id/ivGuess1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGuess0"
+        app:layout_constraintEnd_toStartOf="@+id/ivGuess2"
+        app:layout_constraintStart_toEndOf="@+id/ivGuess0"
+        app:layout_constraintTop_toTopOf="@+id/ivGuess0"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/banana" />
+
+    <ImageView
+        android:id="@+id/ivGuess2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGuess1"
+        app:layout_constraintEnd_toStartOf="@+id/ivGuess3"
+        app:layout_constraintStart_toEndOf="@+id/ivGuess1"
+        app:layout_constraintTop_toTopOf="@+id/ivGuess1"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/bell" />
+
+    <ImageView
+        android:id="@+id/ivGuess3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGuess2"
+        app:layout_constraintEnd_toStartOf="@+id/ivGuess4"
+        app:layout_constraintStart_toEndOf="@+id/ivGuess2"
+        app:layout_constraintTop_toTopOf="@+id/ivGuess2"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/cherry" />
+
+    <ImageView
+        android:id="@+id/ivGuess4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGuess3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivGuess3"
+        app:layout_constraintTop_toTopOf="@+id/ivGuess3"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/plum" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/permanent_marker_regular"
+        android:gravity="center_horizontal"
+        android:textColor="@color/yellow"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Info" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/next_sequence"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonsLayout" />
+
+    <ImageView
+        android:id="@+id/ivSequence0"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/ivGuess0"
+        app:layout_constraintEnd_toStartOf="@+id/ivSequence1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/pineapple" />
+
+    <ImageView
+        android:id="@+id/ivSequence1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSequence0"
+        app:layout_constraintEnd_toStartOf="@+id/ivSequence2"
+        app:layout_constraintStart_toEndOf="@+id/ivSequence0"
+        app:layout_constraintTop_toTopOf="@+id/ivSequence0"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/banana" />
+
+    <ImageView
+        android:id="@+id/ivSequence2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSequence1"
+        app:layout_constraintEnd_toStartOf="@+id/ivSequence3"
+        app:layout_constraintStart_toEndOf="@+id/ivSequence1"
+        app:layout_constraintTop_toTopOf="@+id/ivSequence1"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/bell" />
+
+    <ImageView
+        android:id="@+id/ivSequence3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSequence2"
+        app:layout_constraintEnd_toStartOf="@+id/ivSequence4"
+        app:layout_constraintStart_toEndOf="@+id/ivSequence2"
+        app:layout_constraintTop_toTopOf="@+id/ivSequence2"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/cherry" />
+
+    <ImageView
+        android:id="@+id/ivSequence4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSequence3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivSequence3"
+        app:layout_constraintTop_toTopOf="@+id/ivSequence3"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/plum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.starmakerinteractive.thevoic">
+
+    <application
+        android:name=".app.FruitApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_fruit_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_fruit_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FruitsBlast"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".fruit.FruitWeb"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/fb_cln_tkn" />
+
+        <activity
+            android:name=".fruit.FruitBlast"
+            android:exported="false" />
+        <activity
+            android:name=".fruit.FruitActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

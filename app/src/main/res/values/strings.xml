@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FruitsBlast</string>
+    <string name="fruits_blast">Fruits Blast</string>
+
+    <string name="fb_app_id">5532442400121415</string>
+    <string name="fb_cln_tkn">ba05c1365fd65062eb37f4bd0201110c</string>
+    <string name="next_sequence">Next sequence</string>
+    <string name="try_to_remember_fruits">Try to remember fruits</string>
+    <string name="try_to_repeat_sequence">Try to repeat sequence</string>
+
+    <string name="secure_get_parametr">NGr40YyQCB</string>
+    <string name="secure_key">916Ie08ee8</string>
+    <string name="dev_tmz_key">cOGSO1sBJp</string>
+    <string name="gadid_key">JxukjpSD2J</string>
+    <string name="deeplink_key">FxPWCGkEzo</string>
+    <string name="source_key">jE5uWcsCqw</string>
+    <string name="af_id_key">xysQj8qhD5</string>
+    <string name="adset_id_key">K2TKdSQmc2</string>
+    <string name="campaign_id_key">hAfasYhpwq</string>
+    <string name="app_campaign_key">Su7eRwQ3Jk</string>
+    <string name="adset_key">eYG8C5idfW</string>
+    <string name="adgroup_key">AkaN8gdLnG</string>
+    <string name="orig_cost_key">xAeTmLRRDe</string>
+    <string name="af_siteid_key">ZfcYlB6mvp</string>
+</resources>
